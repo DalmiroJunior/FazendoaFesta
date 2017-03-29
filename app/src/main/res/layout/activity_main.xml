@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dalmirojunior.fazendoafesta.MainActivity"
+    android:weightSum="1"
+    android:background="@color/colorBackground">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+                android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/menu"
+                android:background="@color/colorTransparente"
+                android:layout_marginTop="9dp"/>
+
+                <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="43dp"
+                android:background="@color/colorTransparente"
+                app:srcCompat="@mipmap/icone"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/buffet"
+                android:background="@color/colorTransparente"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="18dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/marcador"
+                android:background="@color/colorTransparente"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="100dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eventos"
+        android:textSize="20dp"
+        android:textColor="@color/colorBranca"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+     <LinearLayout
+         android:layout_width="37dp"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             app:srcCompat="@drawable/casamento" />
+
+         <ImageView
+             android:id="@+id/imageView3"
+             android:layout_width="35dp"
+             android:layout_height="40dp"
+             app:srcCompat="@drawable/baloes"
+             android:layout_marginTop="5dp"/>
+
+         <ImageView
+             android:id="@+id/imageView4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:srcCompat="@drawable/bolo" />
+     </LinearLayout>
+
+        <ListView
+            android:id="@+id/ListEventos"
+            android:layout_width="316dp"
+            android:layout_height="152dp">
+
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
