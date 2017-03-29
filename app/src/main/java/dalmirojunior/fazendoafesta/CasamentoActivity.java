@@ -28,7 +28,7 @@ public class CasamentoActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    startActivity(new Intent(CasamentoActivity.this, CasamentoActivity.class));
+                    startActivity(new Intent(CasamentoActivity.this, Empresa_1Activity.class));
                 }else if(position == 1){
                     startActivity(new Intent(CasamentoActivity.this, ConstrucaoActivity.class));
                 }else if(position == 2){
