@@ -138,7 +138,7 @@
         <ListView
             android:id="@+id/ListEventos"
             android:layout_width="316dp"
-            android:layout_height="152dp">
+            android:layout_height="188dp">
 
 
         </ListView>
