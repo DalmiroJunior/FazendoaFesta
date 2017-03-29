@@ -12,6 +12,8 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
     private String [] eventos = {"Casamento","Aniversario infantil", "Aniversario de 15 anos"};
     private ListView listViewEventos;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
