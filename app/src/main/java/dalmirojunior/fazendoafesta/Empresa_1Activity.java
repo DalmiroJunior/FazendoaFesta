@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 public class Empresa_1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
-    private String phone = "999335556";
+    private String phone = "32999999999";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
