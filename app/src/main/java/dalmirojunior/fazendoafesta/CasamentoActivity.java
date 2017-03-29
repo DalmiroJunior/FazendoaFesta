@@ -16,6 +16,9 @@ public class CasamentoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_casamento);
+        ListViewCasamento = (ListView) findViewById(R.id.ListCasamento);
+
+
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
         ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
                 android.R.layout.simple_list_item_1, casamento);
