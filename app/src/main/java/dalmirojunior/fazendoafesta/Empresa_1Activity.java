@@ -26,8 +26,8 @@ public class Empresa_1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                String temp = "tel:" + phone;
-                intent.setData(Uri.parse(temp));
+                String ligar = "tel:" + phone;
+                intent.setData(Uri.parse(ligar));
                 startActivity(intent);
             }
         });
