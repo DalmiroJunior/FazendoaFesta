@@ -21,6 +21,7 @@ public class Empresa_1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empresa_1);
 
+        callButton = (ImageButton) findViewById(R.id.imageButtonLigar);
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +32,5 @@ public class Empresa_1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }
