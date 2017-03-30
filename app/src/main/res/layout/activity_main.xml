@@ -6,92 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="dalmirojunior.fazendoafesta.MainActivity"
-    android:weightSum="1"
     android:background="@color/colorBackground">
 
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
-
-        <LinearLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp">
-
-            <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-                android:weightSum="1">
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/menu"
-                android:background="@color/colorTransparente"
-                android:layout_marginTop="9dp"/>
-
-                <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="50dp"
-                android:layout_height="43dp"
-                android:background="@color/colorTransparente"
-                app:srcCompat="@mipmap/icone"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="5dp"/>
-
-
-
-
-        </LinearLayout>
-
-
-        </LinearLayout>
-
-    </android.support.v7.widget.Toolbar>
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        android:weightSum="1">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="52dp">
-
-
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:srcCompat="@drawable/buffet"
-                android:background="@color/colorTransparente"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="18dp" />
-
-            <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/marcador"
-                android:background="@color/colorTransparente"
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="100dp"/>
-
-        </LinearLayout>
-    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/toolbar"
+        android:id="@+id/customToolbar" />
 
     <TextView
         android:id="@+id/textView"
