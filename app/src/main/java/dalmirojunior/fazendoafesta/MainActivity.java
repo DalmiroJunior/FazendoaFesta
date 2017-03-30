@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
+        toolbar.setTitle("Fazendo a festa");
         setSupportActionBar(toolbar);
 
         listViewEventos = (ListView) findViewById(R.id.ListEventos);
