@@ -158,5 +158,13 @@
         android:layout_height="2dp"
         app:cardBackgroundColor="@color/colorClara"/>
 
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:text="Solicitar Orçamento"
+        android:layout_marginLeft="95dp"/>
+
 
 </LinearLayout>
