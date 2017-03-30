@@ -159,6 +159,20 @@
                 app:srcCompat="@drawable/casamento1"
                 android:layout_marginTop="2dp" />
 
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="364dp"
+                android:layout_height="360dp"
+                app:srcCompat="@drawable/decoracao1"
+                android:layout_marginTop="1dp"/>
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="364dp"
+                android:layout_height="360dp"
+                app:srcCompat="@drawable/decoracao2"
+                android:layout_marginTop="1dp"/>
+
         </LinearLayout>
     </ScrollView>
 
