@@ -3,6 +3,7 @@ package dalmirojunior.fazendoafesta;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,6 +19,9 @@ public class CasamentoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_casamento);
         ListViewCasamento = (ListView) findViewById(R.id.ListCasamento);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
+        toolbar.setTitle("Casamento");
+        setSupportActionBar(toolbar);
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
         ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
                 android.R.layout.simple_list_item_1, casamento);

@@ -9,39 +9,7 @@
         android:background="@color/colorBackground">
 
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="52dp">
-
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="30dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/seta"
-                    android:background="@color/colorTransparente"
-                    android:layout_marginTop="13dp"/>
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Casamento"
-                    android:textSize="23dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginLeft="10dp"
-                    android:textColor="@color/colorBranca"/>
-            </LinearLayout>
-
-        </android.support.v7.widget.Toolbar>
+        <include layout="@layout/toolbar" android:id="@+id/customToolbar" />
 
         <LinearLayout
             android:layout_width="match_parent"
