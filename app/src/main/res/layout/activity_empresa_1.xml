@@ -162,12 +162,7 @@
 
         </LinearLayout>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            app:cardBackgroundColor="@color/colorClara"/>
-
-        <Button
+            <Button
             android:id="@+id/orcamento"
             style="@android:style/Widget.Holo.Button.Toggle"
             android:layout_width="167dp"
@@ -175,7 +170,28 @@
             android:text="Solicitar Orçamento"
             android:layout_marginLeft="95dp" />
 
-    </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                app:cardBackgroundColor="@color/colorClara"
+                android:layout_marginTop="5dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                app:cardBackgroundColor="@color/colorClara"
+                android:layout_marginTop="100dp">
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="364dp"
+                android:layout_height="360dp"
+                app:srcCompat="@drawable/casamento1"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
     </ScrollView>
 
 
