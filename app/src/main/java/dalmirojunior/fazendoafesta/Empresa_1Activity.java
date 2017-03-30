@@ -9,12 +9,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.style.ClickableSpan;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Empresa_1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
+    private Button ButtonIr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,14 @@ public class Empresa_1Activity extends AppCompatActivity {
                 String ligar = "tel:" + phone;
                 intent.setData(Uri.parse(ligar));
                 startActivity(intent);
+            }
+        });
+
+        ButtonIr = (Button) findViewById(R.id.orcamento);
+        ButtonIr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Empresa_1Activity.this, MainActivity.class));
             }
         });
     }
