@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,10 @@ public class Empresa_1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empresa_1);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
+        toolbar.setTitle("Contato");
+        setSupportActionBar(toolbar);
 
         callButton = (ImageButton) findViewById(R.id.imageButtonLigar);
         callButton.setOnClickListener(new View.OnClickListener() {
