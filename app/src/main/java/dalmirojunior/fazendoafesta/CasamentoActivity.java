@@ -18,7 +18,6 @@ public class CasamentoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_casamento);
         ListViewCasamento = (ListView) findViewById(R.id.ListCasamento);
 
-
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
         ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
                 android.R.layout.simple_list_item_1, casamento);
@@ -38,8 +37,6 @@ public class CasamentoActivity extends AppCompatActivity {
                 }else if(position == 4){
                     startActivity(new Intent(CasamentoActivity.this, ConstrucaoActivity.class));
                 }
-
-
             }
         });
 

@@ -6,5 +6,6 @@
     android:layout_height="match_parent"
     tools:context="dalmirojunior.fazendoafesta.AniversarioActivity">
 
-    <include layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar"
+        android:id="@+id/customToolbar"/>
 </android.support.constraint.ConstraintLayout>
