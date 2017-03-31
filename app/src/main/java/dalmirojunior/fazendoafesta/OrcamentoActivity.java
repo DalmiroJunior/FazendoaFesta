@@ -12,6 +12,6 @@ public class OrcamentoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_orcamento);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Orçamento");
+        toolbar.setTitle("Orçamentu");
     }
 }
