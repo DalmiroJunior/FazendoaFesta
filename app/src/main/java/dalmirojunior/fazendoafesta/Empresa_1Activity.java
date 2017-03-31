@@ -44,7 +44,7 @@ public class Empresa_1Activity extends AppCompatActivity {
         ButtonIr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Empresa_1Activity.this, OrcamentoActivity.class));
+                startActivity(new Intent(Empresa_1Activity.this, MainActivity.class));
             }
         });
     }

@@ -2,7 +2,6 @@ package dalmirojunior.fazendoafesta;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 
 public class OrcamentoActivity extends AppCompatActivity {
 
@@ -10,8 +9,5 @@ public class OrcamentoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orcamento);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Orçamentu");
     }
 }
