@@ -41,8 +41,11 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="data da festa:"
+            android:textColor="@color/colorBranca"
+            android:textColorHint="@color/colorBranca"
             android:padding="10dp"
-            android:focusable="false"/>
+            android:focusable="false"
+            android:inputType="none"/>
 
     </LinearLayout>
 </LinearLayout>
