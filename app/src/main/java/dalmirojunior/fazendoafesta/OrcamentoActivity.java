@@ -1,13 +1,60 @@
 package dalmirojunior.fazendoafesta;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+        import android.app.Activity;
+        import android.app.DatePickerDialog;
+        import android.app.Dialog;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.view.View.OnClickListener;
+        import android.widget.DatePicker;
+        import android.widget.EditText;
 
-public class OrcamentoActivity extends AppCompatActivity {
+public class OrcamentoActivity extends Activity {
+
+    EditText editText3;
+
+    private int mYear;
+    private int mMonth;
+    private int mDay;
+
+    static final int DATE_DIALOG_ID = 0;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orcamento);
+
+        editText3 = (EditText) findViewById(R.id.editText3);
+
+        editText3.setOnClickListener(new OnClickListener() {
+
+            public void onClick(View v) {
+                showDialog(DATE_DIALOG_ID);
+
+            }
+        });
+
     }
+
+    @Override
+    protected Dialog onCreateDialog(int id) {
+
+        switch (id) {
+            case DATE_DIALOG_ID:
+                return new DatePickerDialog(this, mDateSetListener, mYear, mMonth,
+                        mDay);
+        }
+        return null;
+    }
+
+    private DatePickerDialog.OnDateSetListener mDateSetListener = new DatePickerDialog.OnDateSetListener() {
+
+        public void onDateSet(DatePicker view, int year, int monthOfYear,
+                              int dayOfMonth) {
+            mYear = year;
+            mMonth = monthOfYear;
+            mDay = dayOfMonth;
+        }
+    };
 }
+
