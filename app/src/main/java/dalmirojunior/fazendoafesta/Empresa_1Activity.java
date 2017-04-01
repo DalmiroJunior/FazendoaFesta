@@ -33,10 +33,7 @@ public class Empresa_1Activity extends AppCompatActivity {
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                String ligar = "tel:" + phone;
-                intent.setData(Uri.parse(ligar));
-                startActivity(intent);
+            ligar();
             }
         });
 
@@ -47,5 +44,12 @@ public class Empresa_1Activity extends AppCompatActivity {
                 startActivity(new Intent(Empresa_1Activity.this, OrcamentoActivity.class));
             }
         });
+    }
+
+    public void ligar(){
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        String ligar = "tel:" + phone;
+        intent.setData(Uri.parse(ligar));
+        startActivity(intent);
     }
 }
