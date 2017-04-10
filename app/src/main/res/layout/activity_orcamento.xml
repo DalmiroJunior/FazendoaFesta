@@ -15,34 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:hint="para: "
-            android:textColorHint="@color/colorBranca"
-            android:textColor="@color/colorBranca"/>
-
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:hint="de: "
-            android:textColorHint="@color/colorBranca" />
-
         <EditText
             android:id="@+id/editText3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="data da festa:"
+            android:hint="Data"
             android:textColor="@color/colorBranca"
             android:textColorHint="@color/colorBranca"
+            android:textAlignment="center"
             android:padding="10dp"
             android:focusable="false"
             android:inputType="none"/>

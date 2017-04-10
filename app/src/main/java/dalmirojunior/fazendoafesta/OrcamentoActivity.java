@@ -9,6 +9,8 @@ package dalmirojunior.fazendoafesta;
         import android.widget.DatePicker;
         import android.widget.EditText;
 
+        import java.util.Calendar;
+
 public class OrcamentoActivity extends Activity {
 
     EditText editText3;
@@ -41,8 +43,10 @@ public class OrcamentoActivity extends Activity {
 
         switch (id) {
             case DATE_DIALOG_ID:
-                return new DatePickerDialog(this, mDateSetListener, mYear, mMonth,
-                        mDay);
+
+                Calendar dataAtual = Calendar.getInstance();
+                return new DatePickerDialog(this, mDateSetListener, dataAtual.get(Calendar.YEAR), dataAtual.get(Calendar.MONTH),
+                        dataAtual.get(Calendar.DAY_OF_MONTH));
         }
         return null;
     }
@@ -54,6 +58,7 @@ public class OrcamentoActivity extends Activity {
             mYear = year;
             mMonth = monthOfYear;
             mDay = dayOfMonth;
+            editText3.setText(dayOfMonth + "/" + monthOfYear + "/" + year);
         }
     };
 }
