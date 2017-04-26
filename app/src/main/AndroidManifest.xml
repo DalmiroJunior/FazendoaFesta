@@ -27,7 +27,8 @@
         <activity
             android:name=".BottomMenuActivity"
             android:label="@string/title_activity_bottom_menu" />
-        <activity android:name=".DecoracaoActivity"></activity>
+        <activity android:name=".DecoracaoActivity" />
+        <activity android:name=".AdapterMain"></activity>
     </application>
 
 </manifest>

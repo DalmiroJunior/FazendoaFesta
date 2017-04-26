@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class CasamentoActivity extends AppCompatActivity {
 
-    private String[] casamento = {"Decoração","Buffet","Bolo","Convites","Cabelo e Maquiagem"};
+    private String[] casamento = {"Decoração","Buffet","Bole","Convites","Cabelo e Maquiagem"};
     private ListView ListViewCasamento;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
