@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         listViewEventos = (ListView) findViewById(R.id.ListEventos);
 
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
-        ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
+        ArrayAdapter<String> adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, eventos);
 
         listViewEventos.setAdapter(adapter);

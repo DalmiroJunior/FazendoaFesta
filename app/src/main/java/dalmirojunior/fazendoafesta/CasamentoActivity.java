@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class CasamentoActivity extends AppCompatActivity {
 
-    private String[] casamento = {"Empresa 1","Empresa 2","Empresa 3","Empresa 4","Empresa 5"};
+    private String[] casamento = {"Decoração","Buffet","Bolo","Convites","Cabelo e Maquiagem"};
     private ListView ListViewCasamento;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class CasamentoActivity extends AppCompatActivity {
         toolbar.setTitle("Casamento");
         setSupportActionBar(toolbar);
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
-        ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
+        ArrayAdapter<String> adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, casamento);
 
         ListViewCasamento.setAdapter(adapter);
@@ -31,7 +31,7 @@ public class CasamentoActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    startActivity(new Intent(CasamentoActivity.this, Empresa_1Activity.class));
+                    startActivity(new Intent(CasamentoActivity.this, DecoracaoActivity.class));
                 }else if(position == 1){
                     startActivity(new Intent(CasamentoActivity.this, ConstrucaoActivity.class));
                 }else if(position == 2){

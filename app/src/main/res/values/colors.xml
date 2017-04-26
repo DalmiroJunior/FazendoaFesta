@@ -2,12 +2,13 @@
 <resources>
     <color name="colorPrimary">#133b48</color>
     <color name="colorPrimaryDark">#133b48</color>
-    <color name="colorAccent">#238dae</color>
+    <color name="colorAccent">#47b3d4</color>
     <color name="colorTransparente">#00000000</color>
     <color name="colorBranca">#ffffff</color>
     <color name="colorCinzaClaro">#a9a9a9</color>
     <color name="colorBackground">#14627b</color>
     <color name="colorClara">#d4d4d4</color>
     <color name="colorCinza">#585555</color>
-    <color name="colorAzulClaro">#238dae</color>
+    <color name="colorAzulClaro">#4dc3e7</color>
+    <color name="colorRosa">#fcebf2</color>
 </resources>
