@@ -97,24 +97,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="empresanumero1"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/colorClara"/>
+                    android:layout_marginTop="10dp"/>
 
                 <TextView
                     android:id="@+id/textFacebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Empresa 1"
-                    android:layout_marginTop="4dp"
-                    android:textColor="@color/colorClara"/>
+                    android:layout_marginTop="4dp"/>
 
                 <TextView
                     android:id="@+id/textSite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="www.empresa1.com.br"
-                    android:layout_marginTop="3dp"
-                    android:textColor="@color/colorClara"/>
+                    android:layout_marginTop="3dp"/>
             </LinearLayout>
 
             <ImageButton
