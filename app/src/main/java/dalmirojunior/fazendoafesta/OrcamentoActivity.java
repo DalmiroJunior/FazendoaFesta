@@ -3,7 +3,10 @@ package dalmirojunior.fazendoafesta;
         import android.app.Activity;
         import android.app.DatePickerDialog;
         import android.app.Dialog;
+        import android.content.Intent;
+        import android.net.Uri;
         import android.os.Bundle;
+        import android.provider.ContactsContract;
         import android.view.View;
         import android.view.View.OnClickListener;
         import android.widget.DatePicker;
@@ -37,6 +40,7 @@ public class OrcamentoActivity extends Activity {
         });
 
     }
+
 
     @Override
     protected Dialog onCreateDialog(int id) {

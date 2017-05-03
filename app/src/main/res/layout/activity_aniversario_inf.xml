@@ -1,11 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="dalmirojunior.fazendoafesta.AniversarioInfActivity">
+    android:orientation="vertical"
+    tools:context="dalmirojunior.fazendoafesta.AniversarioInfActivity"
+    android:weightSum="1"
+    android:background="@color/colorWhiteOff">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/customToolbar"/>
-</android.support.constraint.ConstraintLayout>
+    <include layout="@layout/toolbar" android:id="@+id/customToolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/textAniverInf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Serviços"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/imageViewDecoracaoInf"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/decoracaoinf"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewBoloInf"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/boloinf"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewDoceInf"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/docesinf"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewConviteInf"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/conviteinf"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewSalgadoInf"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/salgadoinf"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="473dp"
+                    android:id="@+id/ListAniversarioInf">
+
+                </ListView>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class CasamentoActivity extends AppCompatActivity {
 
-    private String[] casamento = {"Decoração","Buffet","Bole","Convites","Cabelo e Maquiagem"};
+    private String[] casamento = {"Decoração","Buffet","Bolo","Convites","Cabelo e Maquiagem"};
     private ListView ListViewCasamento;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +33,13 @@ public class CasamentoActivity extends AppCompatActivity {
                 if (position == 0){
                     startActivity(new Intent(CasamentoActivity.this, DecoracaoActivity.class));
                 }else if(position == 1){
-                    startActivity(new Intent(CasamentoActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(CasamentoActivity.this, BuffetActivity.class));
                 }else if(position == 2){
-                    startActivity(new Intent(CasamentoActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(CasamentoActivity.this, BoloActivity.class));
                 }else if(position == 3){
-                    startActivity(new Intent(CasamentoActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(CasamentoActivity.this, ConvitesActivity.class));
                 }else if(position == 4){
-                    startActivity(new Intent(CasamentoActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(CasamentoActivity.this, CabeloActivity.class));
                 }
             }
         });

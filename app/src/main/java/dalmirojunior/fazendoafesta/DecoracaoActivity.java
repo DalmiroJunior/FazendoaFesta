@@ -11,26 +11,26 @@ import android.widget.ListView;
 
 public class DecoracaoActivity extends AppCompatActivity {
 
-    private String[] servicos = {"Empresa 1","Empresa 2","Empresa 3","Empresa 4","Empresa 5"};
-    private ListView ListViewServicos;
+    private String[] servicosCas = {"Empresa 1","Empresa 2","Empresa 3","Empresa 4","Empresa 5"};
+    private ListView ListViewServicosCas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_decoracao);
-        ListViewServicos = (ListView) findViewById(R.id.ListServicos);
+        ListViewServicosCas = (ListView) findViewById(R.id.ListServicos);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
         toolbar.setTitle("Decoração");
         setSupportActionBar(toolbar);
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1, servicos);
-        ListViewServicos.setAdapter(adapter);
-        ListViewServicos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                android.R.layout.simple_list_item_1, servicosCas);
+        ListViewServicosCas.setAdapter(adapter);
+        ListViewServicosCas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    startActivity(new Intent(DecoracaoActivity.this, Empresa_1Activity.class));
+                    startActivity(new Intent(DecoracaoActivity.this, EmpresaDC1Activity.class));
                 }else if(position == 1){
                     startActivity(new Intent(DecoracaoActivity.this, ConstrucaoActivity.class));
                 }else if(position == 2){

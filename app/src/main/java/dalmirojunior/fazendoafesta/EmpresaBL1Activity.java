@@ -1,28 +1,24 @@
 package dalmirojunior.fazendoafesta;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Empresa_1Activity extends AppCompatActivity {
+public class EmpresaBL1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
-    private Button ButtonIr;
+    private Button buttonIr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_empresa_1);
+        setContentView(R.layout.activity_empresa_bl1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
         toolbar.setLogo(R.drawable.ic_voltar);
@@ -33,15 +29,15 @@ public class Empresa_1Activity extends AppCompatActivity {
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            ligar();
+                ligar();
             }
         });
 
-        ButtonIr = (Button) findViewById(R.id.orcamento);
-        ButtonIr.setOnClickListener(new View.OnClickListener() {
+        buttonIr = (Button) findViewById(R.id.orcamento);
+        buttonIr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Empresa_1Activity.this, OrcamentoActivity.class));
+                startActivity(new Intent(EmpresaBL1Activity.this, OrcamentoActivity.class));
             }
         });
     }

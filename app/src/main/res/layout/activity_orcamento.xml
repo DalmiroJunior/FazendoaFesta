@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="dalmirojunior.fazendoafesta.AniversarioActivity"
-    android:background="@color/colorBackground">
+    android:background="@color/colorWhiteOff">
+
 
     <include layout="@layout/toolbar"
         android:id="@+id/customToolbar"/>
@@ -15,12 +16,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <EditText
             android:id="@+id/editText3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="Data"
-            android:textColor="@color/colorBranca"
+            android:textColor="@color/colorPrimaryDark"
             android:textColorHint="@color/colorBranca"
             android:textAlignment="center"
             android:padding="10dp"

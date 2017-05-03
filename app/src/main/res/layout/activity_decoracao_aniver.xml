@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="dalmirojunior.fazendoafesta.DecoracaoActivity"
+    tools:context="dalmirojunior.fazendoafesta.DecoracaoAniverActivity"
     android:weightSum="1"
     android:background="@color/colorWhiteOff">
 
@@ -20,11 +20,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textViewServicos"
+                android:id="@+id/textAniver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Empresas"
+                android:text="Serviços"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20dp"
@@ -42,7 +42,7 @@
                 <ListView
                     android:layout_width="match_parent"
                     android:layout_height="473dp"
-                    android:id="@+id/ListServicos">
+                    android:id="@+id/ListEmpresasAniver">
 
                 </ListView>
 

@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Fzendo a Festa");
+        toolbar.setTitle("Fazendo a Festa");
         setSupportActionBar(toolbar);
 
         listViewEventos = (ListView) findViewById(R.id.ListEventos);
