@@ -21,7 +21,6 @@ public class EmpresaBF1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_empresa_bf1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setLogo(R.drawable.ic_voltar);
         toolbar.setTitle("Contato");
         setSupportActionBar(toolbar);
 

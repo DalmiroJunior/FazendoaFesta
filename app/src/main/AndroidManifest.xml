@@ -30,9 +30,9 @@
         <activity android:name=".DecoracaoActivity" />
         <activity android:name=".AdapterMain" />
         <activity android:name=".DecoracaoInfActivity" />
-        <activity android:name=".EmpresaDC1InfActivity" />
+        <activity android:name=".EmpresaInfDC1Activity" />
         <activity android:name=".DecoracaoAniverActivity" />
-        <activity android:name=".EmpresaDC1AniverActivity" />
+        <activity android:name=".EmpresaAniverDC1Activity" />
         <activity android:name=".BoloActivity" />
         <activity android:name=".EmpresaBL1Activity" />
         <activity android:name=".BuffetActivity" />
@@ -40,7 +40,15 @@
         <activity android:name=".ConvitesActivity" />
         <activity android:name=".EmpresaCV1Activity" />
         <activity android:name=".CabeloActivity" />
-        <activity android:name=".EmpresaCB1Activity"></activity>
+        <activity android:name=".EmpresaCB1Activity" />
+        <activity android:name=".BoloInfActivity" />
+        <activity android:name=".EmpresaInfBL1Activity" />
+        <activity android:name=".DocesInfActivity" />
+        <activity android:name=".EmpresaInfDO1Activity" />
+        <activity android:name=".ConvitesInfActivity" />
+        <activity android:name=".EmpresaInfCV1Activity" />
+        <activity android:name=".EmpresaInfSG1Activity" />
+        <activity android:name=".SalgadosInfActivity"></activity>
     </application>
 
 </manifest>

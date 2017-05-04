@@ -9,22 +9,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class EmpresaBL1Activity extends AppCompatActivity {
+public class EmpresaInfDC1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
-    private Button buttonIr;
+    private Button ButtonIr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_empresa_bl1);
+        setContentView(R.layout.activity_empresa_inf_dc1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
         toolbar.setTitle("Contato");
         setSupportActionBar(toolbar);
 
-        callButton = (ImageButton) findViewById(R.id.imageButtonLigar);
+        callButton = (ImageButton) findViewById(R.id.imageButtonLigarInf);
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,11 +32,11 @@ public class EmpresaBL1Activity extends AppCompatActivity {
             }
         });
 
-        buttonIr = (Button) findViewById(R.id.orcamento);
-        buttonIr.setOnClickListener(new View.OnClickListener() {
+        ButtonIr = (Button) findViewById(R.id.orcamento);
+        ButtonIr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EmpresaBL1Activity.this, OrcamentoActivity.class));
+                startActivity(new Intent(EmpresaInfDC1Activity.this, OrcamentoActivity.class));
             }
         });
     }

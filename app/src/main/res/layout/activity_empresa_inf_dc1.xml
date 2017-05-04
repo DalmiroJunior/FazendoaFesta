@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="dalmirojunior.fazendoafesta.EmpresaAniverDC1Activity"
+    tools:context="dalmirojunior.fazendoafesta.EmpresaInfDC1Activity"
     android:background="@color/colorWhiteOff">
 
     <include layout="@layout/toolbar" android:id="@id/customToolbar"/>
@@ -18,7 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -33,7 +32,7 @@
 
 
                     <ImageView
-                        android:id="@+id/imageEmpresaAniver"
+                        android:id="@+id/imageEmpresaInf"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         app:srcCompat="@drawable/usermaior"
@@ -64,21 +63,21 @@
 
 
                     <ImageView
-                        android:id="@+id/imageInstaAniver"
+                        android:id="@+id/imageInstaInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/instagram"
                         android:layout_marginTop="10dp"/>
 
                     <ImageView
-                        android:id="@+id/imageFacebookAniver"
+                        android:id="@+id/imageFacebookInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/facebook"
                         android:layout_marginTop="5dp"/>
 
                     <ImageView
-                        android:id="@+id/imageSiteAniver"
+                        android:id="@+id/imageSiteInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/site"
@@ -92,21 +91,21 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textInstaAniver"
+                        android:id="@+id/textInstaInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="empresanumero1"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
-                        android:id="@+id/textFacebookAniver"
+                        android:id="@+id/textFacebookInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Empresa 1"
                         android:layout_marginTop="4dp"/>
 
                     <TextView
-                        android:id="@+id/textSiteAniver"
+                        android:id="@+id/textSiteInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="www.empresa1.com.br"
@@ -114,7 +113,7 @@
                 </LinearLayout>
 
                 <ImageButton
-                    android:id="@+id/imageButtonLigarAniver"
+                    android:id="@+id/imageButtonLigarInf"
                     android:autoLink="phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,24 +145,24 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView21"
-                        android:layout_width="300dp"
+                        android:id="@+id/imageView15"
+                        android:layout_width="330dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresaniver1"
+                        app:srcCompat="@drawable/empresa1aniver"
                         android:layout_marginTop="2dp" />
 
                     <ImageView
-                        android:id="@+id/imageView22"
-                        android:layout_width="394dp"
+                        android:id="@+id/imageView16"
+                        android:layout_width="245dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresaniver2"
+                        app:srcCompat="@drawable/empresa1aniver2"
                         android:layout_marginTop="1dp"/>
 
                     <ImageView
-                        android:id="@+id/imageView23"
-                        android:layout_width="377dp"
+                        android:id="@+id/imageView17"
+                        android:layout_width="294dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresanievr3"
+                        app:srcCompat="@drawable/empresa1aniver3"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </HorizontalScrollView>

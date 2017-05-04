@@ -34,14 +34,16 @@ public class AniversarioInfActivity extends AppCompatActivity {
                 if (position == 0){
                     startActivity(new Intent(AniversarioInfActivity.this, DecoracaoInfActivity.class));
                 }else if(position == 1){
-                    startActivity(new Intent(AniversarioInfActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(AniversarioInfActivity.this, BoloInfActivity.class));
                 }else if(position == 2){
-                    startActivity(new Intent(AniversarioInfActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(AniversarioInfActivity.this, DocesInfActivity.class));
                 }else if(position == 3) {
-                    startActivity(new Intent(AniversarioInfActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(AniversarioInfActivity.this, ConvitesInfActivity.class));
+                }else if(position == 4) {
+                    startActivity(new Intent(AniversarioInfActivity.this, SalgadosInfActivity.class));
                 }
             }
         });
 
-    }
+        }
 }

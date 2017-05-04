@@ -31,7 +31,7 @@ public class DecoracaoAniverActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    startActivity(new Intent(DecoracaoAniverActivity.this, EmpresaDC1AniverActivity.class));
+                    startActivity(new Intent(DecoracaoAniverActivity.this, EmpresaAniverDC1Activity.class));
                 }else if(position == 1){
                     startActivity(new Intent(DecoracaoAniverActivity.this, ConstrucaoActivity.class));
                 }else if(position == 2){

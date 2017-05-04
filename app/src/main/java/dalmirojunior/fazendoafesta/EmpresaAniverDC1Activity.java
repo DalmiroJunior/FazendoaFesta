@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class EmpresaDC1AniverActivity extends AppCompatActivity {
+public class EmpresaAniverDC1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
@@ -37,7 +37,7 @@ public class EmpresaDC1AniverActivity extends AppCompatActivity {
         ButtonIr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EmpresaDC1AniverActivity.this, OrcamentoActivity.class));
+                startActivity(new Intent(EmpresaAniverDC1Activity.this, OrcamentoActivity.class));
             }
         });
     }
