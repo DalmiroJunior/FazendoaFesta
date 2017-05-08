@@ -8,6 +8,7 @@
     tools:context="dalmirojunior.fazendoafesta.EmpresaInfBL1Activity"
     android:background="@color/colorWhiteOff">
 
+
     <include layout="@layout/toolbar" android:id="@id/customToolbar"/>
 
     <ScrollView
@@ -18,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -32,7 +34,7 @@
 
 
                     <ImageView
-                        android:id="@+id/imageEmpresaInf"
+                        android:id="@+id/imageEmpresa"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         app:srcCompat="@drawable/usermaior"
@@ -40,7 +42,7 @@
                         android:layout_marginLeft="20dp"/>
 
                     <TextView
-                        android:id="@+id/textNomeAniver"
+                        android:id="@+id/textNome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -63,21 +65,21 @@
 
 
                     <ImageView
-                        android:id="@+id/imageInstaInf"
+                        android:id="@+id/imageInsta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/instagram"
                         android:layout_marginTop="10dp"/>
 
                     <ImageView
-                        android:id="@+id/imageFacebookInf"
+                        android:id="@+id/imageFacebook"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/facebook"
                         android:layout_marginTop="5dp"/>
 
                     <ImageView
-                        android:id="@+id/imageSiteInf"
+                        android:id="@+id/imageSite"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/site"
@@ -91,21 +93,21 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textInstaInf"
+                        android:id="@+id/textInsta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="empresanumero1"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
-                        android:id="@+id/textFacebookInf"
+                        android:id="@+id/textFacebook"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Empresa 1"
                         android:layout_marginTop="4dp"/>
 
                     <TextView
-                        android:id="@+id/textSiteInf"
+                        android:id="@+id/textSite"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="www.empresa1.com.br"
@@ -127,13 +129,28 @@
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/orcamento"
-                style="@android:style/Widget.Holo.Button.Toggle"
-                android:layout_width="167dp"
-                android:layout_height="wrap_content"
-                android:text="Solicitar Orçamento"
-                android:layout_marginLeft="95dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/orcamento"
+                    style="@android:style/Widget.Holo.Button.Toggle"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:text="Solicitar Orçamento"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/localizacao"
+                    style="@android:style/Widget.Holo.Button.Toggle"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Localização"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -145,25 +162,26 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView15"
+                        android:id="@+id/imageViewBoloCas1"
                         android:layout_width="215dp"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/empresaboloinf1"
                         android:layout_marginTop="2dp" />
 
                     <ImageView
-                        android:id="@+id/imageView16"
-                        android:layout_width="183dp"
+                        android:id="@+id/imageViewBoloCas2"
+                        android:layout_width="184dp"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/empresaboloinf2"
                         android:layout_marginTop="1dp"/>
 
                     <ImageView
-                        android:id="@+id/imageView17"
+                        android:id="@+id/imageBoloCas3"
                         android:layout_width="260dp"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/empresaboloinf3"
                         android:layout_marginTop="1dp"/>
+
                 </LinearLayout>
             </HorizontalScrollView>
 

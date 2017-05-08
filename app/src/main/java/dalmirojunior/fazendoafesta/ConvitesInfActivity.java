@@ -21,7 +21,7 @@ public class ConvitesInfActivity extends AppCompatActivity {
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Bolo");
+        toolbar.setTitle("Convite Infantil");
         setSupportActionBar(toolbar);
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, empresasC);

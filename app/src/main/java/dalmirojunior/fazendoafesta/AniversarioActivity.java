@@ -21,7 +21,7 @@ public class AniversarioActivity extends AppCompatActivity {
         ListAniversario = (ListView) findViewById(R.id.ListAniversario);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Aniversario");
+        toolbar.setTitle("Aniversario 15 anos");
         setSupportActionBar(toolbar);
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
@@ -34,11 +34,13 @@ public class AniversarioActivity extends AppCompatActivity {
                 if (position == 0){
                     startActivity(new Intent(AniversarioActivity.this, DecoracaoAniverActivity.class));
                 }else if(position == 1){
-                    startActivity(new Intent(AniversarioActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(AniversarioActivity.this, BoloAniverActivity.class));
                 }else if(position == 2){
-                    startActivity(new Intent(AniversarioActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(AniversarioActivity.this, DocesAniverActivity.class));
                 }else if(position == 3) {
-                    startActivity(new Intent(AniversarioActivity.this, ConstrucaoActivity.class));
+                    startActivity(new Intent(AniversarioActivity.this, ConvitesAniverActivity.class));
+                }else if(position == 4) {
+                    startActivity(new Intent(AniversarioActivity.this, SalgadoAniverActivity.class));
                 }
             }
         });

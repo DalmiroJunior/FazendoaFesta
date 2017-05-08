@@ -21,7 +21,7 @@ public class AniversarioInfActivity extends AppCompatActivity {
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Aniversario");
+        toolbar.setTitle("Aniversario Infantil");
         setSupportActionBar(toolbar);
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
         ArrayAdapter<String> adapter = new ArrayAdapter(this,

@@ -21,7 +21,7 @@ public class DecoracaoActivity extends AppCompatActivity {
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Decoração");
+        toolbar.setTitle("Decoração Casamento");
         setSupportActionBar(toolbar);
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, servicosCas);

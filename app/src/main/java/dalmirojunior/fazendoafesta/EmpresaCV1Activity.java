@@ -14,6 +14,8 @@ public class EmpresaCV1Activity extends AppCompatActivity {
     private ImageButton callButton;
     private String phone = "32999999999";
     private Button buttonIr;
+    private Button buttonLoc;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,18 @@ public class EmpresaCV1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(EmpresaCV1Activity.this, OrcamentoActivity.class));
+            }
+        });
+
+        buttonLoc = (Button) findViewById(R.id.localizacao);
+        buttonLoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v){
+                Intent it  = new Intent(EmpresaCV1Activity.this, MapsActivity.class);
+                it.putExtra("latitude",-21.193700);
+                it.putExtra("longitude",-41.906493);
+                it.putExtra("nome", "Empresa 1");
+                startActivity(it);
             }
         });
     }

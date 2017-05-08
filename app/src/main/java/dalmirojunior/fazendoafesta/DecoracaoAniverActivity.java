@@ -21,7 +21,7 @@ public class DecoracaoAniverActivity extends AppCompatActivity {
         ListEmpresasAniver = (ListView) findViewById(R.id.ListEmpresasAniver);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Decoração");
+        toolbar.setTitle("Decoração 15 anos");
         setSupportActionBar(toolbar);
 
         ArrayAdapter<String> adapter = new ArrayAdapter(this,

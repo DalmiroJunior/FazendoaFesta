@@ -9,11 +9,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 public class EmpresaDC1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
     private Button buttonIr;
+    private Button buttonLoc;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +46,18 @@ public class EmpresaDC1Activity extends AppCompatActivity {
                 startActivity(new Intent(EmpresaDC1Activity.this, OrcamentoActivity.class));
             }
         });
+
+        buttonLoc = (Button) findViewById(R.id.localizacao);
+        buttonLoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v){
+                Intent it  = new Intent(EmpresaDC1Activity.this, MapsActivity.class);
+                it.putExtra("latitude",-21.193700);
+                it.putExtra("longitude",-41.906493);
+                it.putExtra("nome", "Empresa 1");
+                startActivity(it);
+            }
+        });
     }
 
     public void ligar(){
@@ -47,4 +66,5 @@ public class EmpresaDC1Activity extends AppCompatActivity {
         intent.setData(Uri.parse(ligar));
         startActivity(intent);
     }
+
 }

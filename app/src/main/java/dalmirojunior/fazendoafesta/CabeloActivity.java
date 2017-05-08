@@ -21,7 +21,7 @@ public class CabeloActivity extends AppCompatActivity {
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Bolo");
+        toolbar.setTitle("Cabelo e Maquiagem");
         setSupportActionBar(toolbar);
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, empresasCB);

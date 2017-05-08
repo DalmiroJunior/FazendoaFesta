@@ -21,7 +21,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Bolo");
+        toolbar.setTitle("Bolo Casamento");
         setSupportActionBar(toolbar);
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
         android.R.layout.simple_list_item_1, empresasB);

@@ -128,14 +128,28 @@
 
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/orcamento"
-                style="@android:style/Widget.Holo.Button.Toggle"
-                android:layout_width="167dp"
-                android:layout_height="wrap_content"
-                android:text="Solicitar Orçamento"
-                android:layout_marginLeft="95dp" />
+                <Button
+                    android:id="@+id/orcamento"
+                    style="@android:style/Widget.Holo.Button.Toggle"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:text="Solicitar Orçamento"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/localizacao"
+                    style="@android:style/Widget.Holo.Button.Toggle"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Localização"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"

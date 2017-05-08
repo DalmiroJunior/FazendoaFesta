@@ -22,7 +22,7 @@ public class DecoracaoInfActivity extends AppCompatActivity {
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Decoração");
+        toolbar.setTitle("Decoração Infantil");
         setSupportActionBar(toolbar);
 
         ArrayAdapter<String> adapter = new ArrayAdapter(this,

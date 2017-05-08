@@ -47,7 +47,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 app:srcCompat="@drawable/baloes"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginLeft="5dp"/>
 
             <ImageView
@@ -55,7 +55,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 app:srcCompat="@drawable/bolo"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginLeft="5dp"/>
 
 

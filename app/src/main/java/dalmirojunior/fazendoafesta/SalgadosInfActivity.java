@@ -20,7 +20,7 @@ public class SalgadosInfActivity extends AppCompatActivity {
         ListEmpresaSalgados = (ListView) findViewById(R.id.ListEmpresaSalgadosInf);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
-        toolbar.setTitle("Empresas");
+        toolbar.setTitle("Salgado Infantil");
         setSupportActionBar(toolbar);
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
