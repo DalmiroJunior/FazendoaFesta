@@ -18,7 +18,6 @@ public class EmpresaDC1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
-    private Button buttonIr;
     private Button buttonLoc;
 
 
@@ -65,9 +64,9 @@ public class EmpresaDC1Activity extends AppCompatActivity {
 
         intent  = new Intent(Intent.ACTION_SEND);
         intent.setData(Uri.parse("mailto:"));
-        String[] to = {"rick.couto@hotmail.com"};
+        String[] to = {"contato@empresa.com"};
         intent.putExtra(Intent.EXTRA_EMAIL, to);
-        intent.putExtra(intent.EXTRA_SUBJECT, "ASSUNTO");
+        intent.putExtra(intent.EXTRA_SUBJECT, "Pedido de Orçamento");
         intent.putExtra(intent.EXTRA_TEXT, "");
         intent.setType("message/rfc822");
         Intent chooser = Intent.createChooser(intent, "Enviar email");

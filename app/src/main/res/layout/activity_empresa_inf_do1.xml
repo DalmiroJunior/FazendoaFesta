@@ -139,7 +139,8 @@
                     style="@android:style/Widget.Holo.Button.Toggle"
                     android:layout_width="167dp"
                     android:layout_height="wrap_content"
-                    android:text="Solicitar Orçamento"
+                    android:text="Enviar Email"
+                    android:onClick="email"
                     android:layout_marginLeft="10dp" />
 
                 <Button

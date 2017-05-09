@@ -13,7 +13,6 @@ public class EmpresaInfDC1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
-    private Button ButtonIr;
     private Button buttonLoc;
 
 
@@ -34,13 +33,7 @@ public class EmpresaInfDC1Activity extends AppCompatActivity {
             }
         });
 
-        ButtonIr = (Button) findViewById(R.id.orcamento);
-        ButtonIr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(EmpresaInfDC1Activity.this, OrcamentoActivity.class));
-            }
-        });
+
 
         buttonLoc = (Button) findViewById(R.id.localizacao);
         buttonLoc.setOnClickListener(new View.OnClickListener() {
@@ -60,5 +53,20 @@ public class EmpresaInfDC1Activity extends AppCompatActivity {
         String ligar = "tel:" + phone;
         intent.setData(Uri.parse(ligar));
         startActivity(intent);
+    }
+
+    public void email(View view){
+
+        Intent intent;
+
+        intent  = new Intent(Intent.ACTION_SEND);
+        intent.setData(Uri.parse("mailto:"));
+        String[] to = {"contato@empresa.com"};
+        intent.putExtra(Intent.EXTRA_EMAIL, to);
+        intent.putExtra(intent.EXTRA_SUBJECT, "Pedido de Orçamento");
+        intent.putExtra(intent.EXTRA_TEXT, "");
+        intent.setType("message/rfc822");
+        Intent chooser = Intent.createChooser(intent, "Enviar email");
+        startActivity(chooser);
     }
 }
