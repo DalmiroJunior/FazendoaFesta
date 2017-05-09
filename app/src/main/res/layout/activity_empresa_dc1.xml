@@ -139,6 +139,7 @@
         android:layout_width="167dp"
         android:layout_height="wrap_content"
         android:text="Solicitar Orçamento"
+        android:onClick="email"
         android:layout_marginLeft="10dp" />
 
     <Button

@@ -39,14 +39,6 @@ public class EmpresaDC1Activity extends AppCompatActivity {
             }
         });
 
-        buttonIr = (Button) findViewById(R.id.orcamento);
-        buttonIr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(EmpresaDC1Activity.this, OrcamentoActivity.class));
-            }
-        });
-
         buttonLoc = (Button) findViewById(R.id.localizacao);
         buttonLoc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +57,21 @@ public class EmpresaDC1Activity extends AppCompatActivity {
         String ligar = "tel:" + phone;
         intent.setData(Uri.parse(ligar));
         startActivity(intent);
+    }
+
+    public void email(View view){
+
+        Intent intent;
+
+        intent  = new Intent(Intent.ACTION_SEND);
+        intent.setData(Uri.parse("mailto:"));
+        String[] to = {"rick.couto@hotmail.com"};
+        intent.putExtra(Intent.EXTRA_EMAIL, to);
+        intent.putExtra(intent.EXTRA_SUBJECT, "ASSUNTO");
+        intent.putExtra(intent.EXTRA_TEXT, "");
+        intent.setType("message/rfc822");
+        Intent chooser = Intent.createChooser(intent, "Enviar email");
+        startActivity(chooser);
     }
 
 }
