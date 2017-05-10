@@ -1,105 +1,104 @@
- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dalmirojunior.fazendoafesta.CasamentoActivity"
+    android:weightSum="1"
+    android:background="@color/colorWhiteOff">
+
+
+    <include layout="@layout/toolbar" android:id="@+id/customToolbar" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="dalmirojunior.fazendoafesta.CasamentoActivity"
-        android:weightSum="1"
-        android:background="@color/colorWhiteOff">
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Serviços"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
-        <include layout="@layout/toolbar" android:id="@+id/customToolbar" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-     <ScrollView
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
 
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imageViewDecoracaoCas"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/decoracaocas"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"/>
 
-             <TextView
-                 android:id="@+id/textView"
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:layout_marginTop="10dp"
-                 android:text="Serviços"
-                 android:textAlignment="center"
-                 android:textColor="@color/colorPrimaryDark"
-                 android:textSize="20dp"
-                 android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/imageViewBuffetCas"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/buffetcas"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="5dp"/>
 
+                    <ImageView
+                        android:id="@+id/imageViewBoloCas"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/bolocas"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="5dp"/>
 
-             <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageViewConviteCas"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/convitecas"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="5dp"/>
 
-                 <LinearLayout
-                     android:layout_width="wrap_content"
-                     android:layout_height="match_parent"
-                     android:orientation="vertical"
-                     android:weightSum="1">
+                    <ImageView
+                        android:id="@+id/imageViewNoiva"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/noiva"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"/>
 
-                     <ImageView
-                         android:id="@+id/imageViewDecoracaoCas"
-                         android:layout_width="35dp"
-                         android:layout_height="35dp"
-                         app:srcCompat="@drawable/decoracaocas"
-                         android:layout_marginTop="10dp"
-                         android:layout_marginLeft="5dp"/>
-
-                     <ImageView
-                         android:id="@+id/imageViewBuffetCas"
-                         android:layout_width="35dp"
-                         android:layout_height="35dp"
-                         app:srcCompat="@drawable/buffetcas"
-                         android:layout_marginTop="11dp"
-                         android:layout_marginLeft="5dp"/>
-
-                     <ImageView
-                         android:id="@+id/imageViewBoloCas"
-                         android:layout_width="35dp"
-                         android:layout_height="35dp"
-                         app:srcCompat="@drawable/bolocas"
-                         android:layout_marginTop="14dp"
-                         android:layout_marginLeft="5dp"/>
-
-                     <ImageView
-                         android:id="@+id/imageViewConviteCas"
-                         android:layout_width="35dp"
-                         android:layout_height="35dp"
-                         app:srcCompat="@drawable/convitecas"
-                         android:layout_marginTop="12dp"
-                         android:layout_marginLeft="5dp"/>
-
-                     <ImageView
-                         android:id="@+id/imageViewNoiva"
-                         android:layout_width="35dp"
-                         android:layout_height="35dp"
-                         app:srcCompat="@drawable/noiva"
-                         android:layout_marginTop="15dp"
-                         android:layout_marginLeft="5dp"/>
-
-                 </LinearLayout>
+                </LinearLayout>
 
 
-                 <ListView
-                     android:id="@+id/ListCasamento"
-                     android:layout_width="match_parent"
-                     android:layout_height="473dp">
+                <ListView
+                    android:id="@+id/ListCasamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="473dp">
 
-                 </ListView>
-
-
-             </LinearLayout>
+                </ListView>
 
 
-         </LinearLayout>
-     </ScrollView>
+            </LinearLayout>
 
 
- </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
+
+</LinearLayout>
