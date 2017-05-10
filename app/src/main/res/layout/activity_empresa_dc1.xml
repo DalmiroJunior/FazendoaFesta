@@ -134,8 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:background="@color/colorBackgroundbotao">
+                android:gravity="center">
 
                 <mehdi.sakout.fancybuttons.FancyButton
                     android:id="@+id/orcamento"
