@@ -132,9 +132,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="45dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@color/colorBackgroundbotao">
 
                 <mehdi.sakout.fancybuttons.FancyButton
                     android:id="@+id/orcamento"
