@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="dalmirojunior.fazendoafesta.MainActivity"
     android:background="@color/colorWhiteOff">
@@ -11,6 +12,7 @@
 
     <include layout="@layout/toolbar"
         android:id="@+id/customToolbar" />
+
 
     <TextView
         android:id="@+id/textView"

@@ -14,11 +14,13 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import mehdi.sakout.fancybuttons.FancyButton;
+
 public class EmpresaDC1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
-    private Button buttonLoc;
+    private FancyButton buttonLoc;
 
 
     @Override
@@ -38,7 +40,7 @@ public class EmpresaDC1Activity extends AppCompatActivity {
             }
         });
 
-        buttonLoc = (Button) findViewById(R.id.localizacao);
+        buttonLoc = (FancyButton) findViewById(R.id.localizacao);
         buttonLoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){

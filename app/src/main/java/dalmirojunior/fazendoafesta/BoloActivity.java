@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class BoloActivity extends AppCompatActivity {
 
-private String[] empresasB = {"Empresa 1","Empresa 2","Empresa 3","Empresa 4","Empresa 5"};
+private String[] empresasB = {"Empresa 1"};
 private ListView ListEmpresasBolo;
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +35,6 @@ protected void onCreate(Bundle savedInstanceState) {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             if (position == 0){
                 startActivity(new Intent(BoloActivity.this, EmpresaBL1Activity.class));
-            }else if(position == 1){
-                startActivity(new Intent(BoloActivity.this, ConstrucaoActivity.class));
-            }else if(position == 2){
-                startActivity(new Intent(BoloActivity.this, ConstrucaoActivity.class));
-            }else if(position == 3){
-                startActivity(new Intent(BoloActivity.this, ConstrucaoActivity.class));
-            }else if(position == 4){
-                startActivity(new Intent(BoloActivity.this, ConstrucaoActivity.class));
             }
         }
     });

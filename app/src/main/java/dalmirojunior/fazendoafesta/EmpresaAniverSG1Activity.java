@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import mehdi.sakout.fancybuttons.FancyButton;
+
 public class EmpresaAniverSG1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "32999999999";
-    private Button buttonLoc;
+    private FancyButton buttonLoc;
 
 
     @Override
@@ -35,7 +37,7 @@ public class EmpresaAniverSG1Activity extends AppCompatActivity {
 
 
 
-        buttonLoc = (Button) findViewById(R.id.localizacao);
+        buttonLoc = (FancyButton) findViewById(R.id.localizacao);
         buttonLoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){
