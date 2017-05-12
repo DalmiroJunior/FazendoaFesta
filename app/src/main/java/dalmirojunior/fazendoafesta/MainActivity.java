@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle("Fazendo a Festa");
         setSupportActionBar(toolbar);
 
+
         listViewEventos = (ListView) findViewById(R.id.ListEventos);
 
         // ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
