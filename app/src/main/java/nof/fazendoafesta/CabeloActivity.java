@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class CabeloActivity extends AppCompatActivity {
 
-    private String[] empresasCB = {"Empresa 1"};
+    private String[] empresasCB = {"Realcy Coiffeur"};
     private ListView ListEmpresasCabelo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
