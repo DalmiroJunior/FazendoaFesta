@@ -34,7 +34,7 @@ public class DecoracaoInfActivity extends AppCompatActivity {
                 if (position == 0){
                     startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfNatalieDecoracoesDC1Activity.class));
                 }else if (position == 1){
-                    startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfCamilaFestasDC2Activity.class));
+                    startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfNatalieDecoracoesDC1Activity.class));
                 }
             }
         });
