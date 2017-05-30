@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="dalmirojunior.fazendoafesta.EmpresaAniverDO1Activity"
+    tools:context="nof.fazendoafesta.EmpresaAniverDO1Activity"
     android:background="@color/colorWhiteOff">
 
 

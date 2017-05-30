@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dalmirojunior.fazendoafesta">
+    package="nof.fazendoafesta">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
@@ -15,49 +15,47 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="nof.fazendoafesta.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CasamentoActivity" />
-        <activity android:name=".AniversarioInfActivity" />
-        <activity android:name=".AniversarioActivity" />
-        <activity android:name=".ConstrucaoActivity" />
-        <activity android:name=".EmpresaDC1Activity" />
-        <activity android:name=".OrcamentoActivity" />
+        <activity android:name="nof.fazendoafesta.CasamentoActivity" />
+        <activity android:name="nof.fazendoafesta.AniversarioInfActivity" />
+        <activity android:name="nof.fazendoafesta.AniversarioActivity" />
+        <activity android:name="nof.fazendoafesta.ConstrucaoActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaNatalieDecoracoesDC1Activity" />
+        <activity android:name="nof.fazendoafesta.OrcamentoActivity" />
         <activity
-            android:name=".BottomMenuActivity"
+            android:name="nof.fazendoafesta.BottomMenuActivity"
             android:label="@string/title_activity_bottom_menu" />
-        <activity android:name=".DecoracaoActivity" />
-        <activity android:name=".AdapterMain" />
-        <activity android:name=".DecoracaoInfActivity" />
-        <activity android:name=".EmpresaInfDC1Activity" />
-        <activity android:name=".DecoracaoAniverActivity" />
-        <activity android:name=".EmpresaAniverDC1Activity" />
-        <activity android:name=".BoloActivity" />
-        <activity android:name=".EmpresaBL1Activity" />
-        <activity android:name=".BuffetActivity" />
-        <activity android:name=".EmpresaBF1Activity" />
-        <activity android:name=".ConvitesActivity" />
-        <activity android:name=".EmpresaCV1Activity" />
-        <activity android:name=".CabeloActivity" />
-        <activity android:name=".EmpresaCB1Activity" />
-        <activity android:name=".BoloInfActivity" />
-        <activity android:name=".EmpresaInfBL1Activity" />
-        <activity android:name=".DocesInfActivity" />
-        <activity android:name=".EmpresaInfDO1Activity" />
-        <activity android:name=".ConvitesInfActivity" />
-        <activity android:name=".EmpresaInfCV1Activity" />
-        <activity android:name=".EmpresaInfSG1Activity" />
-        <activity android:name=".SalgadosInfActivity" />
-        <activity android:name=".BoloAniverActivity" />
-        <activity android:name=".EmpresaAniverBL1Activity" />
+        <activity android:name="nof.fazendoafesta.DecoracaoActivity" />
+        <activity android:name="nof.fazendoafesta.DecoracaoInfActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaInfDC1Activity" />
+        <activity android:name="nof.fazendoafesta.DecoracaoAniverActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaAniverNatalieDecoracoesDC1Activity" />
+        <activity android:name="nof.fazendoafesta.BoloActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaBL1Activity" />
+        <activity android:name="nof.fazendoafesta.BuffetActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaBF1Activity" />
+        <activity android:name="nof.fazendoafesta.ConvitesActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaCV1Activity" />
+        <activity android:name="nof.fazendoafesta.CabeloActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaNatalieDecoracoesCB1Activity" />
+        <activity android:name="nof.fazendoafesta.BoloInfActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaInfBL1Activity" />
+        <activity android:name="nof.fazendoafesta.DocesInfActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaInfDO1Activity" />
+        <activity android:name="nof.fazendoafesta.ConvitesInfActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaInfCV1Activity" />
+        <activity android:name="nof.fazendoafesta.EmpresaInfSG1Activity" />
+        <activity android:name="nof.fazendoafesta.SalgadosInfActivity" />
+        <activity android:name="nof.fazendoafesta.BoloAniverActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaAniverBL1Activity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -71,14 +69,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="nof.fazendoafesta.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".DocesAniverActivity" />
-        <activity android:name=".EmpresaAniverDO1Activity" />
-        <activity android:name=".ConvitesAniverActivity" />
-        <activity android:name=".EmpresaAniverCV1Activity" />
-        <activity android:name=".SalgadoAniverActivity" />
-        <activity android:name=".EmpresaAniverSG1Activity"></activity>
+        <activity android:name="nof.fazendoafesta.DocesAniverActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaAniverDO1Activity" />
+        <activity android:name="nof.fazendoafesta.ConvitesAniverActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaAniverCV1Activity" />
+        <activity android:name="nof.fazendoafesta.SalgadoAniverActivity" />
+        <activity android:name="nof.fazendoafesta.EmpresaAniverSG1Activity"></activity>
     </application>
 
 </manifest>
