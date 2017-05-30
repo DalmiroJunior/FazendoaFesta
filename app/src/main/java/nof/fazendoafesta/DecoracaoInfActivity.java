@@ -12,13 +12,13 @@ import android.widget.ListView;
 public class DecoracaoInfActivity extends AppCompatActivity {
 
     private String[] EmpresasInf = {"Natalie Decorações","Camila Festas"};
-    private ListView ListEmpresasInf;
+    private ListView ListEmpresasInfa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_decoracao_inf);
-        ListEmpresasInf = (ListView) findViewById(R.id.ListEmpresasInf);
+        ListEmpresasInfa = (ListView) findViewById(R.id.ListEmpresasInf);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
@@ -27,14 +27,14 @@ public class DecoracaoInfActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, EmpresasInf);
-        ListEmpresasInf.setAdapter(adapter);
-        ListEmpresasInf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        ListEmpresasInfa.setAdapter(adapter);
+        ListEmpresasInfa.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
                     startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfNatalieDecoracoesDC1Activity.class));
                 }else if (position == 1){
-                    startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfNatalieDecoracoesDC1Activity.class));
+                    startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfCamilaFestasDC2Activity.class));
                 }
             }
         });

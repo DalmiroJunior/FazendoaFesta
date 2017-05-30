@@ -10,23 +10,23 @@ import android.widget.ImageButton;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
-public class EmpresaInfBL1Activity extends AppCompatActivity {
+public class EmpresaManiaDeDoceInfBL1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
-    private String phone = "32999999999";
+    private String phone = "32985018060";
     private FancyButton buttonLoc;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_empresa_inf_bl1);
+        setContentView(R.layout.activity_mania_de_doce_inf_bl1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
         toolbar.setTitle("Contato");
         setSupportActionBar(toolbar);
 
-        callButton = (ImageButton) findViewById(R.id.imageButtonLigarInf);
+        callButton = (ImageButton) findViewById(R.id.imageButtonLigar);
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,10 +40,10 @@ public class EmpresaInfBL1Activity extends AppCompatActivity {
         buttonLoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){
-                Intent it  = new Intent(EmpresaInfBL1Activity.this, MapsActivity.class);
+                Intent it  = new Intent(EmpresaManiaDeDoceInfBL1Activity.this, MapsActivity.class);
                 it.putExtra("latitude",-21.193700);
                 it.putExtra("longitude",-41.906493);
-                it.putExtra("nome", "Empresa 1");
+                it.putExtra("nome", "Mania de Doce");
                 startActivity(it);
             }
         });

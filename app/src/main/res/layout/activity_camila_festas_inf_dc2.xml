@@ -184,23 +184,23 @@
 
                     <ImageView
                         android:id="@+id/imageView15"
-                        android:layout_width="329dp"
+                        android:layout_width="350dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/nataliedecinf"
+                        app:srcCompat="@drawable/camiladecinf"
                         android:layout_marginTop="2dp" />
 
                     <ImageView
                         android:id="@+id/imageView16"
-                        android:layout_width="289dp"
+                        android:layout_width="348dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/nataliedecinf2"
+                        app:srcCompat="@drawable/camiladecinf2"
                         android:layout_marginTop="1dp"/>
 
                     <ImageView
                         android:id="@+id/imageView17"
-                        android:layout_width="298dp"
+                        android:layout_width="347dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/nataliedecind3"
+                        app:srcCompat="@drawable/camiladecinf3"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </HorizontalScrollView>

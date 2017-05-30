@@ -47,7 +47,7 @@
         <activity android:name=".CabeloActivity" />
         <activity android:name=".EmpresaRealcyCoiffeurCB1Activity" />
         <activity android:name=".BoloInfActivity" />
-        <activity android:name=".EmpresaInfBL1Activity" />
+        <activity android:name=".EmpresaManiaDeDoceInfBL1Activity" />
         <activity android:name=".DocesInfActivity" />
         <activity android:name=".EmpresaInfDO1Activity" />
         <activity android:name=".ConvitesInfActivity" />
