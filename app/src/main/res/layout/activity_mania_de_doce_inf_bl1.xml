@@ -200,14 +200,14 @@
 
                     <ImageView
                         android:id="@+id/imageBoloCas3"
-                        android:layout_width="200dp"
+                        android:layout_width="199dp"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/maniadocinf2"
                         android:layout_marginTop="1dp"/>
 
                     <ImageView
                         android:id="@+id/imageBoloCas4"
-                        android:layout_width="200dp"
+                        android:layout_width="257dp"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/maniadocinf3"
                         android:layout_marginTop="1dp"/>
