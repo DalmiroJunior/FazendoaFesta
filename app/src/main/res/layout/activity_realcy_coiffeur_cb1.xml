@@ -89,7 +89,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="244dp"
+                    android:layout_width="230dp"
                     android:layout_height="82dp"
                     android:orientation="vertical">
 
@@ -120,11 +120,8 @@
                     android:autoLink="phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phone"
-                    android:background="@color/colorTransparente"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="20dp"/>
+                    app:srcCompat="@drawable/ic_logo_phone"
+                    android:background="@color/colorTransparente"/>
 
             </LinearLayout>
 
