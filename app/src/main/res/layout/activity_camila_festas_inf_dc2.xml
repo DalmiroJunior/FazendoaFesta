@@ -9,6 +9,8 @@
     tools:context="nof.fazendoafesta.EmpresaInfCamilaFestasDC2Activity"
     android:background="@color/colorWhiteOff">
 
+    <include layout="@layout/toolbar" android:id="@id/customToolbar"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
