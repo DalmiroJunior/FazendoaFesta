@@ -78,7 +78,8 @@
         <activity android:name=".SalgadoAniverActivity" />
         <activity android:name=".EmpresaAniverSG1Activity" />
         <activity android:name=".EmpresaInfCamilaFestasDC2Activity" />
-        <activity android:name=".EmpresaManiaDoDoceActivity"></activity>
+        <activity android:name=".EmpresaManiaDoDoceActivity" />
+        <activity android:name=".EmpresaTiaLuciaSGActivity"></activity>
     </application>
 
 </manifest>
