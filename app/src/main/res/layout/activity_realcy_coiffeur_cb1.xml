@@ -126,10 +126,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="20dp"/>
 
-
-
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -149,7 +146,7 @@
                     fancy:fb_borderColor="#FFFFFF"
                     fancy:fb_borderWidth="1dp"
                     fancy:fb_defaultColor="@color/colorAccent"
-                    fancy:fb_focusColor="#ff838b"
+                    fancy:fb_focusColor="@color/colorBackground"
                     fancy:fb_radius="30dp"
                     fancy:fb_fontIconResource=""
                     fancy:fb_text="Enviar Email"
@@ -167,7 +164,7 @@
                     fancy:fb_borderColor="#FFFFFF"
                     fancy:fb_borderWidth="1dp"
                     fancy:fb_defaultColor="@color/colorAccent"
-                    fancy:fb_focusColor="#ff838b"
+                    fancy:fb_focusColor="@color/colorBackground"
                     fancy:fb_fontIconResource="&#xf007;"
                     fancy:fb_iconPosition="left"
                     fancy:fb_radius="30dp"
