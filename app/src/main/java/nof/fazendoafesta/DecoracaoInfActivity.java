@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class DecoracaoInfActivity extends AppCompatActivity {
 
-    private String[] EmpresasInf = {"Empresa 1"};
+    private String[] EmpresasInf = {"Natalie Decorações"};
     private ListView ListEmpresasInf;
 
     @Override
@@ -32,7 +32,7 @@ public class DecoracaoInfActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfDC1Activity.class));
+                    startActivity(new Intent(DecoracaoInfActivity.this, EmpresaInfNatalieDecoracoesDC1Activity.class));
                 }
             }
         });

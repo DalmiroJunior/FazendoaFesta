@@ -10,16 +10,16 @@ import android.widget.ImageButton;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
-public class EmpresaBF1Activity extends AppCompatActivity {
+public class EmpresaNatalieDecoracoesBF1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
-    private String phone = "32999999999";
+    private String phone = "32999253785";
     private FancyButton buttonLoc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_empresa_bf1);
+        setContentView(R.layout.activity_natalie_decoracoes_bf1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
         toolbar.setTitle("Contato");
@@ -39,10 +39,10 @@ public class EmpresaBF1Activity extends AppCompatActivity {
         buttonLoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){
-                Intent it  = new Intent(EmpresaBF1Activity.this, MapsActivity.class);
+                Intent it  = new Intent(EmpresaNatalieDecoracoesBF1Activity.this, MapsActivity.class);
                 it.putExtra("latitude",-21.193700);
                 it.putExtra("longitude",-41.906493);
-                it.putExtra("nome", "Empresa 1");
+                it.putExtra("nome", "Natalie Decorações");
                 startActivity(it);
             }
         });
@@ -62,7 +62,7 @@ public class EmpresaBF1Activity extends AppCompatActivity {
 
         intent  = new Intent(Intent.ACTION_SEND);
         intent.setData(Uri.parse("mailto:"));
-        String[] to = {"contato@empresa.com"};
+        String[] to = {"natfumia1010@yahoo.com.br"};
         intent.putExtra(Intent.EXTRA_EMAIL, to);
         intent.putExtra(intent.EXTRA_SUBJECT, "Pedido de Orçamento");
         intent.putExtra(intent.EXTRA_TEXT, "");

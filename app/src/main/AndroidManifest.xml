@@ -35,13 +35,13 @@
             android:label="@string/title_activity_bottom_menu" />
         <activity android:name="nof.fazendoafesta.DecoracaoActivity" />
         <activity android:name="nof.fazendoafesta.DecoracaoInfActivity" />
-        <activity android:name="nof.fazendoafesta.EmpresaInfDC1Activity" />
+        <activity android:name="nof.fazendoafesta.EmpresaInfNatalieDecoracoesDC1Activity" />
         <activity android:name="nof.fazendoafesta.DecoracaoAniverActivity" />
         <activity android:name="nof.fazendoafesta.EmpresaAniverNatalieDecoracoesDC1Activity" />
         <activity android:name="nof.fazendoafesta.BoloActivity" />
         <activity android:name="nof.fazendoafesta.EmpresaBL1Activity" />
         <activity android:name="nof.fazendoafesta.BuffetActivity" />
-        <activity android:name="nof.fazendoafesta.EmpresaBF1Activity" />
+        <activity android:name="nof.fazendoafesta.EmpresaNatalieDecoracoesBF1Activity" />
         <activity android:name="nof.fazendoafesta.ConvitesActivity" />
         <activity android:name="nof.fazendoafesta.EmpresaCV1Activity" />
         <activity android:name="nof.fazendoafesta.CabeloActivity" />

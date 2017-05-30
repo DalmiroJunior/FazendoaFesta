@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="nof.fazendoafesta.EmpresaBF1Activity"
+    tools:context="nof.fazendoafesta.EmpresaNatalieDecoracoesBF1Activity"
     android:background="@color/colorWhiteOff">
 
 
@@ -47,7 +47,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nome da Empresa"
+                        android:text="Natalie Decorações"
                         android:textSize="22dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="45dp"/>
@@ -97,21 +97,21 @@
                         android:id="@+id/textInsta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="empresanumero1"
+                        android:text="--"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
                         android:id="@+id/textFacebook"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Empresa 1"
+                        android:text="Natalie Decorações"
                         android:layout_marginTop="4dp"/>
 
                     <TextView
                         android:id="@+id/textSite"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="www.empresa1.com.br"
+                        android:text="--"
                         android:layout_marginTop="3dp"/>
                 </LinearLayout>
 
@@ -186,23 +186,23 @@
 
                     <ImageView
                         android:id="@+id/imageViewBoloCas1"
-                        android:layout_width="319dp"
+                        android:layout_width="300dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresabuffet1"
+                        app:srcCompat="@drawable/nataliesalgado"
                         android:layout_marginTop="2dp" />
 
                     <ImageView
                         android:id="@+id/imageViewBoloCas2"
-                        android:layout_width="266dp"
+                        android:layout_width="300dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresabuffet2"
+                        app:srcCompat="@drawable/nataliesalgado2"
                         android:layout_marginTop="1dp"/>
 
                     <ImageView
                         android:id="@+id/imageBoloCas3"
                         android:layout_width="299dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresabuffet3"
+                        app:srcCompat="@drawable/nataliesalgado3"
                         android:layout_marginTop="1dp"/>
 
                 </LinearLayout>

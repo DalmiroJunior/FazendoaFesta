@@ -16,7 +16,7 @@ public class CabeloActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_realcy_coiffeur_cabelo);
+        setContentView(R.layout.activity_cabelo);
         ListEmpresasCabelo = (ListView) findViewById(R.id.ListEmpresasCabelo);
 
 

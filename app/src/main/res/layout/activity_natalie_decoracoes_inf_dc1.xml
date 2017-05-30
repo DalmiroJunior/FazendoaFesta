@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="nof.fazendoafesta.EmpresaInfDC1Activity"
+    tools:context="nof.fazendoafesta.EmpresaInfNatalieDecoracoesDC1Activity"
     android:background="@color/colorWhiteOff">
 
     <include layout="@layout/toolbar" android:id="@id/customToolbar"/>
@@ -45,7 +45,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nome da Empresa"
+                        android:text="Natalie Decorações"
                         android:textSize="22dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="45dp"/>
@@ -95,21 +95,21 @@
                         android:id="@+id/textInstaInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="empresanumero1"
+                        android:text="--"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
                         android:id="@+id/textFacebookInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Empresa 1"
+                        android:text="Natalie Decorações"
                         android:layout_marginTop="4dp"/>
 
                     <TextView
                         android:id="@+id/textSiteInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="www.empresa1.com.br"
+                        android:text="--"
                         android:layout_marginTop="3dp"/>
                 </LinearLayout>
 
@@ -184,23 +184,23 @@
 
                     <ImageView
                         android:id="@+id/imageView15"
-                        android:layout_width="330dp"
+                        android:layout_width="329dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresa1aniver"
+                        app:srcCompat="@drawable/nataliedecinf"
                         android:layout_marginTop="2dp" />
 
                     <ImageView
                         android:id="@+id/imageView16"
-                        android:layout_width="245dp"
+                        android:layout_width="289dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresa1aniver2"
+                        app:srcCompat="@drawable/nataliedecinf2"
                         android:layout_marginTop="1dp"/>
 
                     <ImageView
                         android:id="@+id/imageView17"
-                        android:layout_width="294dp"
+                        android:layout_width="298dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/empresa1aniver3"
+                        app:srcCompat="@drawable/nataliedecind3"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </HorizontalScrollView>

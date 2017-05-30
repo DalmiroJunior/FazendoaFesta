@@ -20,7 +20,7 @@ public class EmpresaAniverNatalieDecoracoesDC1Activity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aniver_natalie_decoracoes_dc1);
+        setContentView(R.layout.activity_natalie_decoracoes_aniver_dc1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
         toolbar.setLogo(R.drawable.ic_voltar);
@@ -44,6 +44,7 @@ public class EmpresaAniverNatalieDecoracoesDC1Activity extends AppCompatActivity
                 Intent it  = new Intent(EmpresaAniverNatalieDecoracoesDC1Activity.this, MapsActivity.class);
                 it.putExtra("latitude",-21.193700);
                 it.putExtra("longitude",-41.906493);
+                it.putExtra("nome", "Natalie Decorações");
                 startActivity(it);
             }
         });

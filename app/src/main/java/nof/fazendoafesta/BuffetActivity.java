@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class BuffetActivity extends AppCompatActivity {
 
-    private String[] empresasBF = {"Empresa 1"};
+    private String[] empresasBF = {"Natalie Decorações"};
     private ListView ListEmpresasBuffet;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class BuffetActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    startActivity(new Intent(BuffetActivity.this, EmpresaBF1Activity.class));
+                    startActivity(new Intent(BuffetActivity.this, EmpresaNatalieDecoracoesBF1Activity.class));
                 }
             }
         });
