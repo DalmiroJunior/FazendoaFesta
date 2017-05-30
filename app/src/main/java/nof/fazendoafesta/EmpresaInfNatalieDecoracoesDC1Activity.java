@@ -26,7 +26,7 @@ public class EmpresaInfNatalieDecoracoesDC1Activity extends AppCompatActivity {
         toolbar.setTitle("Contato");
         setSupportActionBar(toolbar);
 
-        callButton = (ImageButton) findViewById(R.id.imageButtonLigarInf);
+        callButton = (ImageButton) findViewById(R.id.imageButtonLigar);
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
