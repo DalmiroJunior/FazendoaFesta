@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class BoloActivity extends AppCompatActivity {
 
-private String[] empresasB = {"Empresa 1"};
+private String[] empresasB = {"Ainda não há empresas disponíveis!"};
 private ListView ListEmpresasBolo;
 @Override
 protected void onCreate(Bundle savedInstanceState) {
