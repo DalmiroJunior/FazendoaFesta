@@ -16,7 +16,7 @@ public class CabeloActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cabelo);
+        setContentView(R.layout.activity_realcy_coiffeur_cabelo);
         ListEmpresasCabelo = (ListView) findViewById(R.id.ListEmpresasCabelo);
 
 
@@ -34,7 +34,7 @@ public class CabeloActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    startActivity(new Intent(CabeloActivity.this, EmpresaNatalieDecoracoesCB1Activity.class));
+                    startActivity(new Intent(CabeloActivity.this, EmpresaRealcyCoiffeurCB1Activity.class));
                 }
             }
         });

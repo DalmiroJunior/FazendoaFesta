@@ -45,7 +45,7 @@
         <activity android:name="nof.fazendoafesta.ConvitesActivity" />
         <activity android:name="nof.fazendoafesta.EmpresaCV1Activity" />
         <activity android:name="nof.fazendoafesta.CabeloActivity" />
-        <activity android:name="nof.fazendoafesta.EmpresaNatalieDecoracoesCB1Activity" />
+        <activity android:name="nof.fazendoafesta.EmpresaRealcyCoiffeurCB1Activity" />
         <activity android:name="nof.fazendoafesta.BoloInfActivity" />
         <activity android:name="nof.fazendoafesta.EmpresaInfBL1Activity" />
         <activity android:name="nof.fazendoafesta.DocesInfActivity" />

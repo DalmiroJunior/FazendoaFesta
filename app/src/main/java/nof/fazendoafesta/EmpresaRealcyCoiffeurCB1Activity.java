@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
-public class EmpresaNatalieDecoracoesCB1Activity extends AppCompatActivity {
+public class EmpresaRealcyCoiffeurCB1Activity extends AppCompatActivity {
 
     private ImageButton callButton;
     private String phone = "3237431073";
@@ -20,7 +20,7 @@ public class EmpresaNatalieDecoracoesCB1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_natalie_decoracoes_cb1);
+        setContentView(R.layout.activity_realcy_coiffeur_cb1);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.customToolbar);
         toolbar.setTitle("Contato");
@@ -40,7 +40,7 @@ public class EmpresaNatalieDecoracoesCB1Activity extends AppCompatActivity {
         buttonLoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){
-                Intent it  = new Intent(EmpresaNatalieDecoracoesCB1Activity.this, MapsActivity.class);
+                Intent it  = new Intent(EmpresaRealcyCoiffeurCB1Activity.this, MapsActivity.class);
                 it.putExtra("latitude",-21.193700);
                 it.putExtra("longitude",-41.906493);
                 it.putExtra("nome", "Empresa 1");
