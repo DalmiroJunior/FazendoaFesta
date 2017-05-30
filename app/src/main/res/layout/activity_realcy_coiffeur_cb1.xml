@@ -38,7 +38,7 @@
                         android:id="@+id/imageEmpresa"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        app:srcCompat="@drawable/usermaior"
+                        app:srcCompat="@drawable/ic_logo_realcy"
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="20dp"/>
 
