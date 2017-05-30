@@ -9,8 +9,6 @@
     tools:context="nof.fazendoafesta.EmpresaInfCamilaFestasDC2Activity"
     android:background="@color/colorWhiteOff">
 
-    <include layout="@layout/toolbar" android:id="@id/customToolbar"/>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -36,21 +34,22 @@
                         android:id="@+id/imageEmpresaInf"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        app:srcCompat="@drawable/usermaior"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"/>
+                        app:srcCompat="@drawable/ic_logo_camila" />
 
                     <TextView
                         android:id="@+id/textNomeAniver"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="45dp"
                         android:layout_weight="1"
                         android:text="Camila Festas"
-                        android:textSize="22dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="45dp"/>
+                        android:textSize="22dp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="85dp"
@@ -67,22 +66,22 @@
                         android:id="@+id/imageInstaInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/instagram"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/instagram" />
 
                     <ImageView
                         android:id="@+id/imageFacebookInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/facebook"
-                        android:layout_marginTop="5dp"/>
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/facebook" />
 
                     <ImageView
                         android:id="@+id/imageSiteInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/site"
-                        android:layout_marginTop="5dp"/>
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/site" />
 
                 </LinearLayout>
 
@@ -95,22 +94,22 @@
                         android:id="@+id/textInstaInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="--"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        android:text="--" />
 
                     <TextView
                         android:id="@+id/textFacebookInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="--"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp"
+                        android:text="--" />
 
                     <TextView
                         android:id="@+id/textSiteInf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="--"
-                        android:layout_marginTop="6dp"/>
+                        android:layout_marginTop="6dp"
+                        android:text="--" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -118,18 +117,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <mehdi.sakout.fancybuttons.FancyButton
                     android:id="@+id/orcamento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="email"
                     android:paddingBottom="10dp"
                     android:paddingLeft="36dp"
                     android:paddingRight="36dp"
                     android:paddingTop="10dp"
-                    android:onClick="email"
                     fancy:fb_borderColor="@color/colorAzulClaro"
                     fancy:fb_borderWidth="2dp"
                     fancy:fb_defaultColor="@color/colorFundoB"
@@ -143,12 +142,12 @@
                     android:id="@+id/localizacao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="email"
                     android:paddingBottom="10dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
                     android:paddingTop="10dp"
-                    android:onClick="email"
-                    android:layout_marginLeft="5dp"
                     fancy:fb_borderColor="@color/colorAzulClaro"
                     fancy:fb_borderWidth="2dp"
                     fancy:fb_defaultColor="@color/colorFundoB"
@@ -173,29 +172,30 @@
                         android:id="@+id/imageView15"
                         android:layout_width="350dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/camiladecinf"
-                        android:layout_marginTop="2dp" />
+                        android:layout_marginTop="2dp"
+                        app:srcCompat="@drawable/camiladecinf" />
 
                     <ImageView
                         android:id="@+id/imageView16"
                         android:layout_width="348dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/camiladecinf2"
-                        android:layout_marginTop="1dp"/>
+                        android:layout_marginTop="1dp"
+                        app:srcCompat="@drawable/camiladecinf2" />
 
                     <ImageView
                         android:id="@+id/imageView17"
                         android:layout_width="347dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/camiladecinf3"
-                        android:layout_marginTop="1dp"/>
+                        android:layout_marginTop="1dp"
+                        app:srcCompat="@drawable/camiladecinf3" />
                 </LinearLayout>
             </HorizontalScrollView>
 
 
-
         </LinearLayout>
     </ScrollView>
+
+    <include layout="@layout/toolbar" android:id="@id/customToolbar"/>
 
 
 </LinearLayout>
