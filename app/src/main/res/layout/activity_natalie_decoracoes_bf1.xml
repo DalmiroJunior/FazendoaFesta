@@ -90,7 +90,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="230dp"
+                    android:layout_width="match_parent"
                     android:layout_height="82dp"
                     android:orientation="vertical">
 
@@ -115,14 +115,6 @@
                         android:layout_marginTop="3dp"
                         android:text="--" />
                 </LinearLayout>
-
-                <ImageButton
-                    android:id="@+id/imageButtonLigar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:autoLink="phone"
-                    android:background="@color/colorTransparente"
-                    app:srcCompat="@drawable/ic_logo_phone" />
 
             </LinearLayout>
 
