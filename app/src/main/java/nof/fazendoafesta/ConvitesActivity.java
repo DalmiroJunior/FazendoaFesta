@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class ConvitesActivity extends AppCompatActivity {
 
-    private String[] empresasB = {"Empresa 1"};
+    private String[] empresasB = {"        Ainda não há empresas disponíveis!"};
     private ListView ListEmpresasConvites;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +33,6 @@ public class ConvitesActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0){
-                    startActivity(new Intent(ConvitesActivity.this, EmpresaCV1Activity.class));
-                }
             }
         });
 
