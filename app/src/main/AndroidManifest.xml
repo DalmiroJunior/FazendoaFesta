@@ -29,33 +29,23 @@
         <activity android:name=".AniversarioActivity" />
         <activity android:name=".ConstrucaoActivity" />
         <activity android:name=".EmpresaNatalieDecoracoesDC1Activity" />
-        <activity android:name=".OrcamentoActivity" />
-        <activity
-            android:name=".BottomMenuActivity"
-            android:label="@string/title_activity_bottom_menu" />
         <activity android:name=".DecoracaoActivity" />
         <activity android:name=".DecoracaoInfActivity" />
         <activity android:name=".EmpresaInfNatalieDecoracoesDC1Activity" />
         <activity android:name=".DecoracaoAniverActivity" />
         <activity android:name=".EmpresaAniverNatalieDecoracoesDC1Activity" />
         <activity android:name=".BoloActivity" />
-        <activity android:name=".EmpresaBL1Activity" />
         <activity android:name=".BuffetActivity" />
         <activity android:name=".EmpresaNatalieDecoracoesBF1Activity" />
         <activity android:name=".ConvitesActivity" />
-        <activity android:name=".EmpresaCV1Activity" />
         <activity android:name=".CabeloActivity" />
         <activity android:name=".EmpresaRealcyCoiffeurCB1Activity" />
         <activity android:name=".BoloInfActivity" />
         <activity android:name=".EmpresaManiaDeDoceInfBL1Activity" />
         <activity android:name=".DocesInfActivity" />
-        <activity android:name=".EmpresaInfDO1Activity" />
         <activity android:name=".ConvitesInfActivity" />
-        <activity android:name=".EmpresaInfCV1Activity" />
-        <activity android:name=".EmpresaInfSG1Activity" />
         <activity android:name=".SalgadosInfActivity" />
         <activity android:name=".BoloAniverActivity" />
-        <activity android:name=".EmpresaAniverBL1Activity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -72,11 +62,8 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".DocesAniverActivity" />
-        <activity android:name=".EmpresaAniverDO1Activity" />
         <activity android:name=".ConvitesAniverActivity" />
-        <activity android:name=".EmpresaAniverCV1Activity" />
         <activity android:name=".SalgadoAniverActivity" />
-        <activity android:name=".EmpresaAniverSG1Activity" />
         <activity android:name=".EmpresaInfCamilaFestasDC2Activity" />
         <activity android:name=".EmpresaManiaDoDoceActivity" />
         <activity android:name=".EmpresaTiaLuciaSGActivity"></activity>
