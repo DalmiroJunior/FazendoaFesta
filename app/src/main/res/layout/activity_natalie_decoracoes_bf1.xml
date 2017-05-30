@@ -38,21 +38,22 @@
                         android:id="@+id/imageEmpresa"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        app:srcCompat="@drawable/usermaior"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"/>
+                        app:srcCompat="@drawable/usermaior" />
 
                     <TextView
                         android:id="@+id/textNome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="45dp"
                         android:layout_weight="1"
                         android:text="Natalie Decorações"
-                        android:textSize="22dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="45dp"/>
+                        android:textSize="22dp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="85dp"
@@ -69,22 +70,22 @@
                         android:id="@+id/imageInsta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/instagram"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/instagram" />
 
                     <ImageView
                         android:id="@+id/imageFacebook"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/facebook"
-                        android:layout_marginTop="5dp"/>
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/facebook" />
 
                     <ImageView
                         android:id="@+id/imageSite"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/site"
-                        android:layout_marginTop="5dp"/>
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/site" />
 
                 </LinearLayout>
 
@@ -97,31 +98,31 @@
                         android:id="@+id/textInsta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="--"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        android:text="--" />
 
                     <TextView
                         android:id="@+id/textFacebook"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Natalie Decorações"
-                        android:layout_marginTop="4dp"/>
+                        android:layout_marginTop="4dp"
+                        android:text="Natalie Decorações" />
 
                     <TextView
                         android:id="@+id/textSite"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="--"
-                        android:layout_marginTop="3dp"/>
+                        android:layout_marginTop="3dp"
+                        android:text="--" />
                 </LinearLayout>
 
                 <ImageButton
                     android:id="@+id/imageButtonLigar"
-                    android:autoLink="phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/ic_logo_phone"
-                    android:background="@color/colorTransparente"/>
+                    android:autoLink="phone"
+                    android:background="@color/colorTransparente"
+                    app:srcCompat="@drawable/ic_logo_phone" />
 
             </LinearLayout>
 
@@ -135,20 +136,19 @@
 
                 <mehdi.sakout.fancybuttons.FancyButton
                     android:id="@+id/orcamento"
-                    android:onClick="email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
+                    android:onClick="email"
                     android:padding="10dp"
                     fancy:fb_borderColor="#FFFFFF"
                     fancy:fb_borderWidth="1dp"
                     fancy:fb_defaultColor="@color/colorAccent"
                     fancy:fb_focusColor="@color/colorBackground"
-                    fancy:fb_radius="30dp"
                     fancy:fb_fontIconResource=""
+                    fancy:fb_radius="30dp"
                     fancy:fb_text="Enviar Email"
-                    fancy:fb_textColor="#FFFFFF" >
-                </mehdi.sakout.fancybuttons.FancyButton>
+                    fancy:fb_textColor="#FFFFFF"></mehdi.sakout.fancybuttons.FancyButton>
 
                 <mehdi.sakout.fancybuttons.FancyButton
                     android:id="@+id/localizacao"
@@ -183,26 +183,25 @@
                         android:id="@+id/imageViewBoloCas1"
                         android:layout_width="300dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/nataliesalgado"
-                        android:layout_marginTop="2dp" />
+                        android:layout_marginTop="2dp"
+                        app:srcCompat="@drawable/nataliesalgado" />
 
                     <ImageView
                         android:id="@+id/imageViewBoloCas2"
                         android:layout_width="300dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/nataliesalgado2"
-                        android:layout_marginTop="1dp"/>
+                        android:layout_marginTop="1dp"
+                        app:srcCompat="@drawable/nataliesalgado2" />
 
                     <ImageView
                         android:id="@+id/imageBoloCas3"
                         android:layout_width="299dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/nataliesalgado3"
-                        android:layout_marginTop="1dp"/>
+                        android:layout_marginTop="1dp"
+                        app:srcCompat="@drawable/nataliesalgado3" />
 
                 </LinearLayout>
             </HorizontalScrollView>
-
 
 
         </LinearLayout>

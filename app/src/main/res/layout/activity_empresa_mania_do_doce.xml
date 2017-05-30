@@ -115,7 +115,7 @@
                 </LinearLayout>
 
                 <ImageButton
-                    android:id="@+id/imageButtonLigarAniver"
+                    android:id="@+id/imageButtonLigar"
                     android:autoLink="phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
