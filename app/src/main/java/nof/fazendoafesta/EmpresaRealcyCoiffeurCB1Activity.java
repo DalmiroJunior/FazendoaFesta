@@ -33,9 +33,9 @@ public class EmpresaRealcyCoiffeurCB1Activity extends AppCompatActivity {
             @Override
             public void onClick (View v){
                 Intent it  = new Intent(EmpresaRealcyCoiffeurCB1Activity.this, MapsActivity.class);
-                it.putExtra("latitude",-21.193700);
-                it.putExtra("longitude",-41.906493);
-                it.putExtra("nome", "Empresa 1");
+                it.putExtra("latitude",-20.615575790405273);
+                it.putExtra("longitude",-42.148189544677734);
+                it.putExtra("nome", "Realcy Coiffeur");
                 startActivity(it);
             }
         });

@@ -34,8 +34,8 @@ public class EmpresaInfCamilaFestasDC2Activity extends AppCompatActivity {
             @Override
             public void onClick (View v){
                 Intent it  = new Intent(EmpresaInfCamilaFestasDC2Activity.this, MapsActivity.class);
-                it.putExtra("latitude",-21.193700);
-                it.putExtra("longitude",-41.906493);
+                it.putExtra("latitude",-21.250299);
+                it.putExtra("longitude",-42.234410);
                 it.putExtra("nome", "Camila Festas");
                 startActivity(it);
             }

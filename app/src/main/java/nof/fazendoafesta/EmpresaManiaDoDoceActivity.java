@@ -32,8 +32,8 @@ public class EmpresaManiaDoDoceActivity extends AppCompatActivity {
             @Override
             public void onClick (View v){
                 Intent it  = new Intent(EmpresaManiaDoDoceActivity.this, MapsActivity.class);
-                it.putExtra("latitude",-21.193700);
-                it.putExtra("longitude",-41.906493);
+                it.putExtra("latitude",-21.250299);
+                it.putExtra("longitude",-42.234410);
                 it.putExtra("nome", "Mania do Doce");
                 startActivity(it);
             }
