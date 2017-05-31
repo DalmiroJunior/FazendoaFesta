@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
@@ -53,14 +54,8 @@ public class EmpresaManiaDoDoceActivity extends AppCompatActivity {
         Intent intent;
 
         intent  = new Intent(Intent.ACTION_SEND);
-        intent.setData(Uri.parse("mailto:"));
-        String[] to = {"contato@empresa.com"};
-        intent.putExtra(Intent.EXTRA_EMAIL, to);
-        intent.putExtra(intent.EXTRA_SUBJECT, "Pedido de Orçamento");
-        intent.putExtra(intent.EXTRA_TEXT, "");
-        intent.setType("message/rfc822");
         Intent chooser = Intent.createChooser(intent, "Enviar email");
-        startActivity(chooser);
+        Toast.makeText(this, "Email não disponivel", Toast.LENGTH_SHORT).show();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
