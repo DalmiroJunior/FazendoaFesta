@@ -91,6 +91,14 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginLeft="5dp"/>
 
+                    <ImageView
+                        android:id="@+id/imageViewCabeloAniver"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/aniver15anos"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"/>
+
                 </LinearLayout>
 
 

@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class AniversarioActivity extends AppCompatActivity {
 
-    private String[] aniversario = {"Decoração","Bolo","Doces","Convites","Salgados"};
+    private String[] aniversario = {"Decoração","Bolo","Doces","Convites","Salgados","Cabelo e Maquiagem"};
     private ListView ListAniversario;
 
     @Override
@@ -41,6 +41,8 @@ public class AniversarioActivity extends AppCompatActivity {
                     startActivity(new Intent(AniversarioActivity.this, ConvitesAniverActivity.class));
                 }else if(position == 4) {
                     startActivity(new Intent(AniversarioActivity.this, SalgadoAniverActivity.class));
+                }else if(position == 5) {
+                    startActivity(new Intent(AniversarioActivity.this, CabeloAniverActivity.class));
                 }
             }
         });
