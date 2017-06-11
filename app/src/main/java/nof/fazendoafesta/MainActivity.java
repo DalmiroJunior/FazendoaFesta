@@ -1,14 +1,17 @@
 package nof.fazendoafesta;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +51,24 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
+public boolean onOptionsItemSelected (MenuItem item){
+     switch (item.getItemId()){
+
+         case R.id.faleConosco:
+
+            Intent intent;
+
+            intent  = new Intent(Intent.ACTION_SEND);
+            intent.setData(Uri.parse("mailto:"));
+            String[] to = {"fazendoafestanof@gmail.com"};
+            intent.putExtra(Intent.EXTRA_EMAIL, to);
+            intent.putExtra(intent.EXTRA_SUBJECT, "Suporte");
+            intent.putExtra(intent.EXTRA_TEXT, "");
+            intent.setType("message/rfc822");
+            Intent chooser = Intent.createChooser(intent, "Enviar email");
+            startActivity(chooser);
+    }
+}
 }
