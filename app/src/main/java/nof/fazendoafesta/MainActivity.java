@@ -15,7 +15,7 @@ import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String [] eventos = {"Casamento","Aniversario infantil", "Aniversario de 15 anos"};
+    private String[] eventos = {"Casamento", "Aniversario infantil", "Aniversario de 15 anos"};
     private ListView listViewEventos;
 
     @Override
@@ -38,37 +38,42 @@ public class MainActivity extends AppCompatActivity {
         listViewEventos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0){
+                if (position == 0) {
                     startActivity(new Intent(MainActivity.this, CasamentoActivity.class));
-                }else if(position == 1){
+                } else if (position == 1) {
                     startActivity(new Intent(MainActivity.this, AniversarioInfActivity.class));
-                }else{
+                } else {
                     startActivity(new Intent(MainActivity.this, AniversarioActivity.class));
                 }
             }
         });
     }
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
-public boolean onOptionsItemSelected (MenuItem item){
-     switch (item.getItemId()){
 
-         case R.id.faleConosco:
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
 
-            Intent intent;
+            case R.id.faleConosco: {
 
-            intent  = new Intent(Intent.ACTION_SEND);
-            intent.setData(Uri.parse("mailto:"));
-            String[] to = {"fazendoafestanof@gmail.com"};
-            intent.putExtra(Intent.EXTRA_EMAIL, to);
-            intent.putExtra(intent.EXTRA_SUBJECT, "Suporte");
-            intent.putExtra(intent.EXTRA_TEXT, "");
-            intent.setType("message/rfc822");
-            Intent chooser = Intent.createChooser(intent, "Enviar email");
-            startActivity(chooser);
+                Intent intent;
+
+                intent = new Intent(Intent.ACTION_SEND);
+                intent.setData(Uri.parse("mailto:"));
+                String[] to = {"fazendoafestanof@gmail.com"};
+                intent.putExtra(Intent.EXTRA_EMAIL, to);
+                intent.putExtra(intent.EXTRA_SUBJECT, "Suporte");
+                intent.putExtra(intent.EXTRA_TEXT, "");
+                intent.setType("message/rfc822");
+                Intent chooser = Intent.createChooser(intent, "Enviar email");
+                startActivity(chooser);
+            }
+        }
+        return false;
     }
 }
-}
+
