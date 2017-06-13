@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
@@ -33,10 +34,8 @@ public class EmpresaNatalieDecoracoesDC1Activity extends AppCompatActivity {
             @Override
             public void onClick (View v){
                 Intent it  = new Intent(EmpresaNatalieDecoracoesDC1Activity.this, MapsActivity.class);
-                it.putExtra("latitude",-21.193700);
-                it.putExtra("longitude",-41.906493);
-                it.putExtra("nome", "Natalie Decorações");
-                startActivity(it);
+                Toast.makeText(EmpresaNatalieDecoracoesDC1Activity.this, "Localização não disponível", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
